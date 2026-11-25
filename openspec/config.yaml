@@ -1,0 +1,17 @@
+schema: spec-driven
+context: |
+  StreamOM: multi-tenant white-label SaaS for professional radio operations, not merely streaming.
+  Canonical product context: docs/README.md and linked documents; mandatory executor rules: AGENTS.md.
+  Greenfield; .NET 10 LTS modular monolith; PostgreSQL EF Core/Dapper and RLS; Angular/PrimeNG/Tailwind consoles; React/Tailwind public PWA; Liquidsoap playout, Icecast HTTP distribution, WebRTC/RTMP ingest.
+  Pending decisions must be resolved before dependent work. Wireframes and local assets are prepared per module. No code implementation is authorized by context alone.
+rules:
+  proposal:
+    - State business intent, module, scope, non-scope, dependencies, decision IDs and readiness blockers.
+  specs:
+    - Include observable behavior, actor permissions, states, edge cases and Given/When/Then scenarios.
+    - Preserve tenant isolation and operational continuity.
+  design:
+    - Document contracts, ownership, consistency, security, failure recovery and relevant visual references.
+    - Do not invent unresolved product decisions.
+  tasks:
+    - Include implementation, real integration tests, UI verification where applicable, and evidence for Verify.

@@ -1,0 +1,9 @@
+# StreamOM executor constitution
+Read docs/README.md, docs/product/vision.md, docs/product/domains.md, docs/architecture/baseline.md, docs/delivery/roadmap.md and docs/decisions/register.md before any change. Read applicable module context and existing specs.
+- Greenfield; mini me executes approved slices using Codex or Antigravity. Argon and Claude via AGY/web are not authorized. No implementation from this baseline alone.
+- Product decisions: ACCEPTED (explicit or delegated), PENDING, DEFERRED, REJECTED. Never silently resolve pending decisions or expand scope. Escalate contradictions. Local engineering choices are allowed only when behavior, contracts, security, UX and cost are unchanged.
+- OpenSpec OPSX: explore/propose/new/continue/ff/apply/verify/sync/archive/bulk-archive/onboard/update as supported by installed version. Verify is mandatory. Use Gherkin acceptance scenarios and test evidence.
+- Each executable issue must include business intent, scope/non-scope, actors, flows, states, edge cases, permissions, contracts, dependencies, acceptance criteria, tests, DoD and local visual assets when applicable. No placeholder UI. Wireframes are refined and exported per module, not globally upfront.
+- Angular + PrimeNG + Tailwind for consoles; React + Tailwind for public PWA. Design tokens, accessibility, responsive, loading/error/empty and action feedback from first visual slice.
+- PostgreSQL canonical; EF Core/Dapper; tenant_id NOT NULL, application authorization + RLS; test against real PostgreSQL. No secrets in logs or source. No cross-tenant access without explicit audited privileged workflow.
+- PR required; mini me handles FIFO, request-<n>-<slug> branches, greenfield ZIP delivery where applicable. Do not create backlog or implementation until authorized. Do not configure CI/CD without owner direction.

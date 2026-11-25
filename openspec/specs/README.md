@@ -1,0 +1,2 @@
+# Canonical implemented specifications
+No implemented capabilities yet. The product baseline in docs/ is discovery context, not proof of implementation. Populate capability specs through approved OpenSpec changes and sync/archive after Verify.
